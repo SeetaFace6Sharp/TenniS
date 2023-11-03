@@ -20,7 +20,7 @@ namespace ts {
         } else {
             cvt = str;
         }
-        std::transform(cvt.begin(), cvt.end(), cvt.begin(), std::towlower);
+        std::transform(cvt.begin(), cvt.end(), cvt.begin(), ::tolower);
         return cvt;
     }
 
